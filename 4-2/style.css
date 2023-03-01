@@ -1,0 +1,30 @@
+html{
+    width: 1000px;
+    font-size: 15px;
+}
+
+.info{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.id{
+    width: 80px;
+}
+
+.title{
+    width: 200px;
+}
+
+.category{
+    width: 100px;
+}
+
+.comment{
+    width: 300px;
+}
+
+.created{
+    width: 200px;
+}
