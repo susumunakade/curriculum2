@@ -88,10 +88,10 @@
             // $sql_posts = new infomation($post_data);
             // $sql_posts -> In_posts();
 
-            $sql_posts = new getData($pdo);
+            $sql_posts = new getData(db_connect());
             $sql_posts -> getPostData();
         ?>
-            <div class="info">
+            <div class="column">
                 <p class="id"> <?php echo '記事ＩＤ'; ?></p>
                 <p class="title"> <?php echo 'タイトル'; ?></p>
                 <p class="category"> <?php echo 'カテゴリ'; ?></p>
@@ -114,7 +114,8 @@
                             elseif($row['category_no'] == 2){
                                 echo "旅行";}
                             else{
-                                echo "その他";}
+                                echo "その他";
+                            }
                             
                         ?> </p>
                         <p class="comment"><?php echo $row['comment']; ?> </p>
