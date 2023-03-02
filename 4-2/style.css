@@ -5,13 +5,42 @@ html{
 
 .column{
     display: flex;
-    background-color:#87ceeb;
     text-align: center;
 }
 
 .info{
     display: flex;
 
+}
+
+.id_column{
+    width: 80px;
+    margin: 5px;
+    background-color:#87ceeb;
+}
+
+.title_column{
+    width: 200px;
+    margin: 5px;
+    background-color:#87ceeb;
+}
+
+.category_column{
+    width: 100px;
+    margin: 5px;
+    background-color:#87ceeb;
+}
+
+.comment_column{
+    width: 300px;
+    margin: 5px;
+    background-color:#87ceeb;
+}
+
+.created_column{
+    width: 200px;
+    margin: 5px;
+    background-color:#87ceeb;
 }
 
 .id{

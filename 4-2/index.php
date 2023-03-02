@@ -88,15 +88,16 @@
             // $sql_posts = new infomation($post_data);
             // $sql_posts -> In_posts();
 
+
             $sql_posts = new getData(db_connect());
             $sql_posts -> getPostData();
         ?>
             <div class="column">
-                <p class="id"> <?php echo '記事ＩＤ'; ?></p>
-                <p class="title"> <?php echo 'タイトル'; ?></p>
-                <p class="category"> <?php echo 'カテゴリ'; ?></p>
-                <p class="comment"> <?php echo '本文'; ?></p>
-                <p class="created"> <?php echo '投稿日'; ?></p>
+                <p class="id_column"> <?php echo '記事ＩＤ'; ?></p>
+                <p class="title_column"> <?php echo 'タイトル'; ?></p>
+                <p class="category_column"> <?php echo 'カテゴリ'; ?></p>
+                <p class="comment_column"> <?php echo '本文'; ?></p>
+                <p class="created_column"> <?php echo '投稿日'; ?></p>
             </div>
             <?php try {
                 $stmt = $pdo->prepare($sql_posts);
