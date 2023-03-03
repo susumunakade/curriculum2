@@ -2,10 +2,14 @@
 
     require_once('getData.php');
 
+    $pdo = new getData();
+    $user = $pdo->getUserData();
+    $posts = $pdo->getPostData();
+
     
     // $sql = "SELECT * FROM posts";
     // // // 関数db_connect()からPDOを取得する
-    $pdo = db_connect();
+    // $pdo = db_connect();
     // try {
     //     $stmt = $pdo->prepare($sql);
     //     $stmt->execute();
@@ -40,12 +44,12 @@
     //         // $this->users = $sql_users;
     //         // $this->posts = $sql_posts;
     //         // $this->aaa = $test;
-    //         $this->content = $info;
-    //     }
+            // $this->content = $info;
+        // }
 
-    //     public function getPosts(){
-    //         echo $this->content;
-    //     }
+        // public function getPosts(){
+            // echo $this->content;
+        // }
 
         // public function whatIsContent() {
         //     echo '中身は'.$this->content.'だよ。';
@@ -78,7 +82,8 @@
 
         <main>
 
-        <?PHP 
+        <?PHP
+             
             // $sql_posts = "SELECT * FROM posts ORDER BY id desc";
             // $pdo = db_connect();
 
@@ -89,8 +94,8 @@
             // $sql_posts -> In_posts();
 
 
-            $sql_posts = new getData(db_connect());
-            $sql_posts -> getPostData();
+            // $sql_posts = new getData(db_connect());
+            // $sql_posts -> getPostData();
         ?>
             <div class="column">
                 <p class="id_column"> <?php echo '記事ＩＤ'; ?></p>
@@ -100,7 +105,7 @@
                 <p class="created_column"> <?php echo '投稿日'; ?></p>
             </div>
             <?php try {
-                $stmt = $pdo->prepare($sql_posts);
+                $stmt = $pdo->prepare($posts);
                 $stmt->execute();
         
                 // ループ文を使用して、1行ずつ読み込んで$rowに代入する
