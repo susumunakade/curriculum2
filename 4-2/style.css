@@ -3,6 +3,40 @@ html{
     font-size: 15px;
 }
 
+/*header*/
+header{
+    width: 1000px;
+    height: 120px;
+}
+
+.logo{
+    background-color: #add8e6;
+    height: 120px;
+    width: 200px;
+    float: left;
+}
+
+
+.name{
+    padding:20px 0;
+    background-color: #87ceeb;
+    height: 20px;
+    text-align: right;
+}
+
+.login{
+    margin-top: -15px;
+    padding:20px 0;
+    background-color: #00ffff;
+    height: 20px;
+    text-align: right;
+}
+
+/*main*/
+main{
+    margin-left: 100px;
+}
+
 .column{
     display: flex;
     text-align: center;
@@ -46,25 +80,35 @@ html{
 .id{
     width: 80px;
     margin: 5px;
+    background-color: #e0ffff;
 }
 
 .title{
     width: 200px;
     margin: 5px;
-    
+    background-color: #e0ffff;
 }
 
 .category{
     width: 100px;
     margin: 5px;
+    background-color: #e0ffff;
 }
 
 .comment{
     width: 300px;
     margin: 5px;
+    background-color: #e0ffff;
 }
 
 .created{
     width: 200px;
     margin: 5px;
+    background-color: #e0ffff;
+}
+
+/*footer*/
+footer{
+    background-color: #00ced1;
+    height: 50px;
 }

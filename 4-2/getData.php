@@ -22,7 +22,7 @@ class getData{
      */
     public function getUserData(){
         $getusers_sql = "SELECT * FROM users limit 1";
-        $users_data = $this->pdo->query($getusers_sql)->fetch(PDO::FETCH_ASSOC);
+        $users_data = $this->pdo->query($getusers_sql) ;/* ->fetch(PDO::FETCH_ASSOC) */
         return $users_data;
     }
     
