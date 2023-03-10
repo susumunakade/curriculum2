@@ -34,7 +34,8 @@ header{
 
 /*main*/
 main{
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .column{
@@ -49,61 +50,61 @@ main{
 
 .id_column{
     width: 80px;
-    margin: 5px;
+    margin: 2px;
     background-color:#87ceeb;
 }
 
 .title_column{
     width: 200px;
-    margin: 5px;
+    margin: 2px;
     background-color:#87ceeb;
 }
 
 .category_column{
     width: 100px;
-    margin: 5px;
+    margin: 2px;
     background-color:#87ceeb;
 }
 
 .comment_column{
     width: 300px;
-    margin: 5px;
+    margin: 2px;
     background-color:#87ceeb;
 }
 
 .created_column{
     width: 200px;
-    margin: 5px;
+    margin: 2px;
     background-color:#87ceeb;
 }
 
 .id{
     width: 80px;
-    margin: 5px;
+    margin: 2px;
     background-color: #e0ffff;
 }
 
 .title{
     width: 200px;
-    margin: 5px;
+    margin: 2px;
     background-color: #e0ffff;
 }
 
 .category{
     width: 100px;
-    margin: 5px;
+    margin: 2px;
     background-color: #e0ffff;
 }
 
 .comment{
     width: 300px;
-    margin: 5px;
+    margin: 2px;
     background-color: #e0ffff;
 }
 
 .created{
     width: 200px;
-    margin: 5px;
+    margin: 2px;
     background-color: #e0ffff;
 }
 
