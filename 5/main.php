@@ -33,7 +33,8 @@ try{
         <p><a class="create_book_btn" href="create_book.php">新規登録</a></p>
         <p class="main_pos"><a class="logout_btn" href="logout.php">ログアウト</a></p>
     </div>
-    <table cellspacing="0">
+    <div id="tbl-bdr">
+    <table cellspacing="0"> 
         <tr class='columun'>
             <td>タイトル</td>
             <td>発売日</td>
@@ -52,6 +53,7 @@ try{
             </tr>
         <?php } ?>
     </table>
+    </div>
     
 
    

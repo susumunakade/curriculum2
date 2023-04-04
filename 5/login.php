@@ -6,11 +6,11 @@ session_start();
 
 if (!empty($_POST)){
     if(empty($_POST["name"])){
-        echo "名前が未入力です";
+        echo "名前が未入力です" .'</br>';
     }
 
     if(empty($_POST["password"])){
-        echo "パスワードが未入力です";
+        echo "パスワードが未入力です" .'</br>';
     }
 }
 
@@ -39,10 +39,10 @@ if(!empty($_POST["name"]) && !empty($_POST["password"])){
             header("Location: main.php");
             exit;
         }else{
-            echo "パスワードに誤りがあります。";
+            echo "パスワードに誤りがあります。" .'</br>';
         }
     }else{
-        echo "ユーザー名かパスワードに誤りがあります。";
+        echo "ユーザー名かパスワードに誤りがあります。" .'</br>';
         }
 }
 
