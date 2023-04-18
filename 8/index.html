@@ -47,28 +47,24 @@
             //表示言語取得
             let get_lang = document.getElementById('sel_lang');
 
+            //日本語、英語の表示を取得
+            let get_jpn = document.getElementById('jpn');
+            let get_en = document.getElementById('en');
+
             //全て表示 出力
             if(get_lang.value === "全て表示"){
-                let get_jpn = document.getElementById('jpn');
-                let get_en = document.getElementById('en');
                 get_jpn.style.display = 'block';
                 get_en.style.display = 'blodk';
             //英語出力
             }else if(get_lang.value === "English"){
-                let get_jpn = document.getElementById('jpn');
-                let get_en = document.getElementById('en');
                 get_jpn.style.display = 'none';
                 get_en.style.display = 'block';
             //日本語出力
             }else if(get_lang.value === "日本語"){
-                let get_jpn = document.getElementById('jpn');
-                let get_en = document.getElementById('en');
                 get_jpn.style.display = 'block';
                 get_en.style.display = 'none';
             //選択してください
             }else{
-                let get_jpn = document.getElementById('jpn');
-                let get_en = document.getElementById('en');
                 get_jpn.style.display = 'none';
                 get_en.style.display = 'none';
             }
