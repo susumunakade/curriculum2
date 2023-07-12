@@ -76,7 +76,10 @@
             }catch (PDOException $e) {
             echo 'Error: ' . $e->getMessage();
             die();
-        } ?>
+            } ?>
+
+            <a href="insert_posts.php">追加</a>
+
         </main>
 
         <footer>

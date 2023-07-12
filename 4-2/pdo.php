@@ -1,6 +1,6 @@
 <?php
 // DB名
-define('DB_DATABASE', 'cheaktest4');
+define('DB_DATABASE', 'checktest4');
 // MySQLのユーザー名
 define('DB_USERNAME', 'root');
 // MySQLのログインパスワード
